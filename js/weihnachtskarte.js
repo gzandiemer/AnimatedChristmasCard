@@ -255,26 +255,26 @@ for(var i = 0; i < circleCount; i++) {
 }
 			
 			
-		function load_home() {
+function load_home() {
 
-				document.getElementById("content").innerHTML=
-		'<audio id="myAudio"><source src="audio/04 Jingle Bells.m4a" type="audio/mp4" volume="1.0"></audio>'+
-		'<svg style="border:3px solid black"><text x="10" y="80" style="font-size:70px;font-style:italic;stroke:darkgrey;fill:darkgreen"rotate="-10,20,5">Schöne Weihnachten</text>'+
-		'<polygon fill="gold" points="350 75, 379 161, 469 161, 397 215, 423 301, 350 250, 277 301, 303 215, 231 161, 321 161" transform="scale(.2) translate(30,345)"/>'+
-		'<text x="10" y="190" style="font-size:70px;font-style:italic;stroke:black;fill:darkgray">liebe Aurelie & Aaron'+
-		'<animate attributeName="fill" values="red;green;blue;#BF3041" begin="10" dur="6" repeatCount="15" fill="freeze" /></text>'+
-		'<rect x="0" y="200" width="800" height="400"/>'+
-		'<defs><radialGradient id="radial"><stop offset="0%" stop-color="white" /><stop offset="100%" stop-color="gray" /></radialGradient></defs>'+
-		'<circle cx="320" cy="400" r="130" fill="url(#radial)"><animateTransform attributeName="transform" type="scale" begin="0" dur="10" from="0.5" to="1"/></circle>'+
-		'<image x="200" y="270" width="250" height="250" xlink:href="img/schlitten.png">'+
-		'<animateTransform attributeName="transform" type="rotate" begin="0" dur="10" from="0, 200,500" to="-360, 200,500"/>'+
-		'<animateTransform id="anim1" attributeName="transform" type="translate" begin="14;36;58;80" dur="2" from="0" to="420"/>'+
-		'<animateTransform id="anim2" attributeName="transform" type="translate" begin="16;38;60;82" dur="4" repeatCount="3" from="-420" to="420"/>'+
-		'<animateTransform id="anim3" attributeName="transform" type="translate" begin="28;50;72;94" dur="2" from="-420" to="0"/></image>'+
-		'<text x="150" y="640" style="font-size:36px;font-style:italic;stroke:black;fill:gold">Grüße aus Deutschland ♥</text></svg>';
+document.getElementById("content").innerHTML=
+'<audio id="myAudio"><source src="audio/04 Jingle Bells.m4a" type="audio/mp4" volume="1.0"></audio>'+
+'<svg style="border:3px solid black"><text x="10" y="80" style="font-size:70px;font-style:italic;stroke:darkgrey;fill:darkgreen"rotate="-10,20,5">Schöne Weihnachten</text>'+
+'<polygon fill="gold" points="350 75, 379 161, 469 161, 397 215, 423 301, 350 250, 277 301, 303 215, 231 161, 321 161" transform="scale(.2) translate(30,345)"/>'+
+'<text x="10" y="190" style="font-size:70px;font-style:italic;stroke:black;fill:darkgray">liebe Aurelie & Aaron'+
+'<animate attributeName="fill" values="red;green;blue;#BF3041" begin="10" dur="6" repeatCount="15" fill="freeze" /></text>'+
+'<rect x="0" y="200" width="800" height="400"/>'+
+'<defs><radialGradient id="radial"><stop offset="0%" stop-color="white" /><stop offset="100%" stop-color="gray" /></radialGradient></defs>'+
+'<circle cx="320" cy="400" r="130" fill="url(#radial)"><animateTransform attributeName="transform" type="scale" begin="0" dur="10" from="0.5" to="1"/></circle>'+
+'<image x="200" y="270" width="250" height="250" xlink:href="img/schlitten.png">'+
+'<animateTransform attributeName="transform" type="rotate" begin="0" dur="10" from="0, 200,500" to="-360, 200,500"/>'+
+'<animateTransform id="anim1" attributeName="transform" type="translate" begin="14;36;58;80" dur="2" from="0" to="420"/>'+
+'<animateTransform id="anim2" attributeName="transform" type="translate" begin="16;38;60;82" dur="4" repeatCount="3" from="-420" to="420"/>'+
+'<animateTransform id="anim3" attributeName="transform" type="translate" begin="28;50;72;94" dur="2" from="-420" to="0"/></image>'+
+'<text x="150" y="640" style="font-size:36px;font-style:italic;stroke:black;fill:gold">Grüße aus Deutschland ♥</text></svg>';
 
-				document.getElementById("myAudio").play();
-			}
+document.getElementById("myAudio").play();
+}
 
 		 
 		
