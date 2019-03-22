@@ -1,6 +1,3 @@
-// https://gist.github.com/CodeMyUI/105732255c42d15d690cea35e9433b56
-
-
 var canvas = document.querySelector('canvas');
 		canvas.width = 840;
 		canvas.height = 840;
@@ -9,17 +6,11 @@ var currentFrame = 0;
 var circles = [];
 var circleCount = 10;
 
-
-
-// ---------
 // LIFECYCLE
-// ---------
 
 function update() {
 
-	// ------------
 	// Update state
-	// ------------
 
 	currentFrame++;
 
@@ -33,34 +24,22 @@ function update() {
 	}
 
 
-
-	// ------
 	// Render
-	// ------
 
 	render();
 }
 
 
-
-
-// ------
 // Render
-// ------
 
 function render() {
 
-	// -----
 	// Clear
-	// -----
 
 	context.clearRect(0, 0, canvas.width, canvas.height);
 
 
-
-	// -----------------
 	// Background circle
-	// -----------------
 
 	context.beginPath();
 	context.fillStyle = 'rgba(255,255,255, 0.3)';
@@ -78,10 +57,7 @@ function render() {
 	context.fill();
 
 
-
-	// ----------------
 	// Particle circles
-	// ----------------
 
 	for(var i = 0; i < circles.length; i++) {
 		circles[i].render();
@@ -89,27 +65,19 @@ function render() {
 
 
 
-	// ----
 	// Loop
-	// ----
 
 	requestAnimationFrame(update);
 
 }
 
 
-
-// ---------------
 // Start Animation
-// ---------------
 
 requestAnimationFrame(update);
 
 
-
-// -------------
 // 3D Projection
-// -------------
 
 var Basic3DProjection = function() {
 
@@ -181,9 +149,7 @@ var _projection = new Basic3DProjection();
 
 
 
-// --------
 // 3D Shape
-// --------
 
 var Basic3DObject = function (x, y, z, size) {
 
